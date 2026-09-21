@@ -16,6 +16,9 @@
   was joined to anything.
 - The share of AMC purchases with matched spend is printed. Below 80%, the
   report says cost per new customer covers part of the account.
+- Spend was pulled for the prior month as well, so the 30% flag compares
+  like with like.
+- Harvesters show a dash for cost per new customer.
 - Unmatched campaigns appear, without a cost, not silently dropped.
 
 ## 4. The classes are fair

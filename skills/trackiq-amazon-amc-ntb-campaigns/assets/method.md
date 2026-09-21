@@ -37,7 +37,11 @@ cost_per_ntb = campaign spend / ntb_purchases     (focus month)
 
 Rank recruiters by it, cheapest first. A recruiter whose cost per new
 customer rose more than 30% on the prior month is flagged, with both months
-shown.
+shown. Only recruiters are flagged — mixed campaigns move for other reasons.
+
+Show a dash, not a number, in the cost-per-new-customer column for
+harvesters. A remarketing line at several hundred dollars per new customer
+is doing its job, and a figure there reads like a failure.
 
 ## 4. The movement
 

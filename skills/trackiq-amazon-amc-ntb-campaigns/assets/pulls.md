@@ -16,8 +16,12 @@ are the comparison.
 | # | Call | Arguments | Gives you |
 |---|---|---|---|
 | 1–3 | `get_amc_ntb_purchases` | **one call per month**, `limit=500` | one row per campaign: NTB and non-NTB purchases and sales |
-| 4 | `get_campaigns` | `ad_type='all'`, `state='all'`, the focus month | Sponsored Ads spend by campaign name |
-| 5 | `get_dsp_performance` | `dimension='campaign'`, `state='all'`, the focus month | DSP spend by campaign name |
+| 4–5 | `get_campaigns` | `ad_type='all'`, `state='all'`, **the focus month and the month before**, one call each | Sponsored Ads spend by campaign name |
+| 6–7 | `get_dsp_performance` | `dimension='campaign'`, `state='all'`, **the focus month and the month before**, one call each | DSP spend by campaign name |
+
+The prior month's spend is what the cost-per-new-customer trend in
+`method.md` compares against. Without it the "rose more than 30%" flag
+cannot be computed.
 
 ## 3. The fields, and how they mislead
 
